@@ -13,7 +13,7 @@ function meuEscopo() {
 
         const objetoPessoas = { //objeto
             nome: nome.value, //nome.valor
-            sobrenome: sobrenome.value, //sobrenome.valor
+            sobrenome: sobrenome.value, //sobrenome.valor 
             peso: peso.value, //peso.valor
             altura: altura.value, //altura.valor
         };

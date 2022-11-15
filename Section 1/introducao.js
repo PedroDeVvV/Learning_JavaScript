@@ -75,5 +75,6 @@ console.log('Está subtração é igual a ' + sub);
 
 //Exemplo de divisão
 let div = n4 % n3;
+
 console.log('Está divisão é igual a ' + div);
 
