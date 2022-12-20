@@ -1,20 +1,20 @@
 // Factory function (Função fábrica)
-// Constructor function (Função construtora)
 function criaPessoa(nome, sobrenome, a, p) {
     return {
         nome,
         sobrenome,
 
         // Getter
-        get nomeCompleto() {
-            return `${this.nome} ${this.sobrenome}`;
+        get nomeCompleto() { //a palavra get 'converte' a função em um atributo da classe
+            return `${this.nome} ${this.sobrenome}`; // this sempre vai se referir a quem o chamou
         },
 
         // Setter
         set nomeCompleto(valor) {
-            valor = valor.split(' ');
+            valor = valor.split(' '); // corta o array
             this.nome = valor.shift();
-            this.sobrenome = valor.join(' ');
+            //this serve para referenciar a propriedade dentro do objeto
+            this.sobrenome = valor.join(' '); //junta em uma string com separador
         },
 
         fala(assunto = 'falando sobre NADA') {
@@ -32,9 +32,9 @@ function criaPessoa(nome, sobrenome, a, p) {
     };
 }
 
-const p1 = criaPessoa('Luiz', 'Otávio', 1.8, 80);
-const p2 = criaPessoa('João', 'Otávio', 1.90, 57);
-const p3 = criaPessoa('Junior', 'Otávio', 1.5, 110);
+const p1 = criaPessoa('Pedro', 'Henrique', 1.7, 70);
+const p2 = criaPessoa(' Lucas', 'Otávio', 1.90, 57);
+const p3 = criaPessoa('Gustavo', 'Lima', 1.5, 110);
 
 console.log(p1.imc);
 console.log(p2.imc);
