@@ -54,7 +54,7 @@ console.log(idade2)
 
 //ex3
 const chaveId = pessoas.map(function (obj, indice) {
-    const newObj = { ...obj };//Usando a propriedade id estamos modificando o obj original, recomendável fazer um spread, mas apesar disso
+    const newObj = { ...obj }; //Usando a propriedade id estamos modificando o obj original, recomendável fazer um spread, mas apesar disso
     newObj.id = indice + 1; //por padrão altera o obj ou array original
     return newObj;
 });
