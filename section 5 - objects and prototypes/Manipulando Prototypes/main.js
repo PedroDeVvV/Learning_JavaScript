@@ -12,7 +12,7 @@
 // //setando o prototype do objeto b mudando pra a
 // Object.setPrototypeOf(objB, objA)
 // console.log(objB.chaveA);
-// console.log(Object.getPrototypeOf(objA));
+// console.log(Object.getPrototypeOf(objA)); //usar isso ao imvés de obj.__proto__
 
 function Produto(nome, preco) {
     this.nome = nome;

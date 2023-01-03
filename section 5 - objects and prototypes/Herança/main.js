@@ -28,10 +28,10 @@ function Caneca(nome, preco, material, estoque) {
     Object.defineProperty(this, 'estoque', {
         enumerable: true,
         configurable: false,
-        get: function () {
+        get: function () { //pega o valor estoque
             return estoque;
         },
-        set: function (valor) {
+        set: function (valor) { //manipula o valor para aceitar somente number 
             if (typeof valor !== 'number') return;
             estoque = valor;
         }
