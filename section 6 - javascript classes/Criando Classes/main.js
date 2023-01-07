@@ -1,3 +1,6 @@
+//TypeOf das class são functions(áçucar sintático)
+//class não sofrem hoisting, ou seja NÃO são isadas, impossivel chamar antes de declarar
+
 class Pessoa {
     constructor(nome, sobrenome) {
         this.nome = nome;

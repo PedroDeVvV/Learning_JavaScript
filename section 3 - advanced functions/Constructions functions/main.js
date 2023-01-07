@@ -13,7 +13,7 @@ function Pessoa(nome, sobrenome) {
 }
 
 
-const p1 = new Pessoa('Pedro', 'Henrique');
+const p1 = new Pessoa('Pedro', 'Henrique'); 
 const p2 = new Pessoa('Tiago', 'Camara');
 const p3 = new Pessoa('Rami', 'Malek');
 p1.metodo();
