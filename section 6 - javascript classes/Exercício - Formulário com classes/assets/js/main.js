@@ -49,7 +49,7 @@ class ValidaFormulario {
         }
 
         for (let campo of this.formulario.querySelectorAll('.validar')) {
-            const label = campo.previousElementSibling.innerText;
+            const label = campo.previousElementSibling.innerText; //pega o parent do elemento anterior
 
             if (!campo.value) {
                 this.criaErro(campo, `Campo "${label}" não pode estar em branco.`);
