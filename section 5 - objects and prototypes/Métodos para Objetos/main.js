@@ -41,3 +41,16 @@ for (let [chave, valor] of Object.entries(produto)) {
 for (let valor of Object.entries(produto)) {
     console.log(valor[0], valor[1]);
 }
+
+//Método in
+
+const carro = {
+    brand:'Audi',
+    hp: '600',
+    model:'RS7'    
+}
+
+console.log('hp' in carro) //- verifica se tem a propriedade dentro do objeto
+
+//Retonar em formato JSON
+console.log(JSON.stringify(Object.entries(carro)))

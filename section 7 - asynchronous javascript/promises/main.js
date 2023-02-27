@@ -10,7 +10,7 @@ function esperaAi(msg, tempo) {
         setTimeout(() => {
             resolve(msg); //só posso mandar um parametro aqui
         }, tempo);
-    });    
+    });
 }
 //promises funcionam em paralelo
 
@@ -60,7 +60,7 @@ const betterConsole = 'Playstation'
 
 function whoIsTheBetterConsole() {
 
-   return new Promise((resolve, reject) => { //basta englobar uma promisse dentro dos executaveis da função
+    return new Promise((resolve, reject) => { //basta englobar uma promisse dentro dos executaveis da função
         if (betterConsole != 'Playstation') {
             reject('Console incorreto')
         } else {
